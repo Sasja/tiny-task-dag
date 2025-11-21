@@ -3,7 +3,7 @@
  */
 
 import { describe, it, expect, vi } from 'vitest';
-import { task, run, type Result } from './index';
+import { task, run, type Result } from '../src/index';
 
 // Helper to add delay
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));

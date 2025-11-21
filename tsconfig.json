@@ -5,12 +5,12 @@
     "lib": ["ES2022"],
     "moduleResolution": "bundler",
     "declaration": true,
-    "outDir": ".",
+    "outDir": "dist",
     "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["*.ts"],
-  "exclude": ["*.test.ts", "node_modules"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["tests/**/*.ts", "node_modules"]
 }

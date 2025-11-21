@@ -3,19 +3,18 @@
   "version": "1.0.0",
   "description": "Minimal (~200 LOC) TypeScript library for building async computation DAGs with typed error handling",
   "type": "module",
-  "main": "./index.js",
-  "types": "./index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./index.d.ts",
-      "import": "./index.js"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
     }
   },
   "files": [
-    "*.js",
-    "*.d.ts",
-    "*.ts",
-    "!*.test.ts",
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "src/**/*.ts",
     "README.md"
   ],
   "scripts": {

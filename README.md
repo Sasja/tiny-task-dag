@@ -11,6 +11,12 @@ When building web applications, you often need to:
 
 This is such a common problem, so I must be reinventing the wheel here. But still, I couldn't find the library that scratched my particular itch so I spent a few days building this. If you know of lightweight alternatives that do this better, I'd love to hear about it!
 
+## Installation
+
+```bash
+npm install tiny-task-dag
+```
+
 ## Features
 
 ### ✅ Includes
@@ -56,7 +62,7 @@ Let's build a complete data pipeline step by step.
 ### Step 1: Fetch user profile from database
 
 ```typescript
-import { task, run, type Result } from '$lib/task';
+import { task, run, type Result } from 'tiny-task-dag';
 import { z } from 'zod';
 
 // Define error type for our domain
@@ -170,7 +176,7 @@ const result = await run(summaryTask);
 Since we're running in the client, let's define a simple handler:
 
 ```typescript
-import { getTrace } from '$lib/task';
+import { getTrace } from 'tiny-task-dag';
 
 function handleClientError<T>(result: Result<T, AppError>): T | null {
   if (result.ok) return result.value;
@@ -227,7 +233,7 @@ That's it! This example demonstrates:
 Turn an tuple of `Task`'s into a single `Task` over a tuple with the wrapped types.
 
 ```typescript
-import { all } from '$lib/task';
+import { all } from 'tiny-task-dag';
 
 // Run multiple independent tasks in parallel
 const dataTask = all('user-data', [profileTask, settingsTask, prefsTask]);
@@ -241,7 +247,7 @@ if (result.ok) {
 ### Bonus: Debugging with traces
 
 ```typescript
-import { getTrace } from '$lib/task';
+import { getTrace } from 'tiny-task-dag';
 
 const result = await run(summaryTask);
 if (!result.ok) {

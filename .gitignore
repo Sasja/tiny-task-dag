@@ -1,4 +1,2 @@
 node_modules
-*.js
-*.d.ts
-!vitest.config.js
+dist
