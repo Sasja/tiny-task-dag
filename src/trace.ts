@@ -4,7 +4,7 @@
  * Extract execution context from task DAG for debugging.
  */
 
-import type { Task } from './core';
+import type { Task } from './core.js';
 
 /**
  * Get execution path from task DAG

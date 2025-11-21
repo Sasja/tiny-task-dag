@@ -1,6 +1,6 @@
 {
   "name": "tiny-task-dag",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Minimal (~200 LOC) TypeScript library for building async computation DAGs with typed error handling",
   "type": "module",
   "main": "./dist/index.js",

@@ -5,7 +5,7 @@
  * parallel execution, and memoization.
  */
 
-import type { Ok, Result, Task, UnwrapTasks } from './core';
+import type { Ok, Result, Task, UnwrapTasks } from './core.js';
 
 /**
  * Execute a task and all its dependencies

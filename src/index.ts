@@ -19,8 +19,8 @@
  * const result = await run(streamsTask);
  */
 
-export type { Task, Result, Ok, Err } from './core';
-export { task, ok, err } from './core';
-export { run } from './run';
-export { getTrace, getEdges } from './trace';
-export { all } from './all';
+export type { Task, Result, Ok, Err } from './core.js';
+export { task, ok, err } from './core.js';
+export { run } from './run.js';
+export { getTrace, getEdges } from './trace.js';
+export { all } from './all.js';

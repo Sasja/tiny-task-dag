@@ -8,8 +8,8 @@
  * that run in parallel as dependencies, with automatic error propagation.
  */
 
-import { task } from './core';
-import type { Task, UnwrapTasks, TaskError } from './core';
+import { task } from './core.js';
+import type { Task, UnwrapTasks, TaskError } from './core.js';
 
 /**
  * Combine tasks to run in parallel with early failure
