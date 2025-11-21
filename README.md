@@ -1,5 +1,7 @@
 # Tiny Async Computation DAG
 
+[![npm version](https://badge.fury.io/js/tiny-task-dag.svg)](https://www.npmjs.com/package/tiny-task-dag)
+
 A minimal (~200 LOC, no deps) Generic TypeScript library for building and executing asynchronous dependency graphs with parallelization and typed error handling.
 
 ## Why?
